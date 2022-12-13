@@ -304,8 +304,9 @@ Correct: b
 This command can be thought of as 'switch user and do', 'superuser do', or 'substitute user and do', depending on who you ask.
 ```
 24. How would you alter this command using octal notation to give read, write, and execute permissions to the file's owner, members of the file's designated group, and all other users for the file poems.txt?
+```
 chmod poems.txt
-
+```
         a. chmod 777 poems.txt
 
         b. chown poems.txt
@@ -342,6 +343,6 @@ Depending on how you need to change the permissions of a file, it can be easier 
         d. C:
 ```
 Correct: c
-The filesystem root, represented by /, is the highest level of the filesystem hierarchy -- everything else in the filesystem is nested 
-somewhere within the root filesystem.
+The filesystem root, represented by /, is the highest level of the filesystem hierarchy -- everything else in the filesystem 
+is nested somewhere within the root filesystem.
 ```
