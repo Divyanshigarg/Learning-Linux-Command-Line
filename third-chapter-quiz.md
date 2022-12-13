@@ -209,11 +209,137 @@ This command will display ownership and modification information, as well as oth
 Correct: b
 The find command's syntax is a little bit different from most other commands.
 ```
-17. 
+17. A symbolic link using a relative path will break if _____.
 
+        a. the link is moved, but not the referenced file
 
+        b. the referenced file is moved, but not the link
 
+        c. it's impossible to break a symbolic link
 
+        d. the link or the referenced file is moved
+```
+Correct: d
+If you want to make a link that can be moved without breaking, use an absolute path or a hard link.
+```
+18. What does the command ln -s outcome.txt report.txt create?
 
+        a. A hard link named outcome.txt that refers to report.txt.
 
+        b. A symlink named report.txt that refers to outcome.txt.
 
+        c. A hard link named report.txt that refers to outcome.txt.
+
+        d. A symlink named outcome.txt that refers to report.txt.
+```
+Correct: b
+Remember that a symbolic link will break if the original file is moved.
+```
+19. You have downloaded a program from the web, and when you try to run it, you receive the error:
+
+-bash: ./newprogram: Permission denied
+
+How would you attempt to resolve this problem?
+
+        a. There is nothing to be done, the program is simply broken.
+
+        b. Run the command chmod u-x newprogram to add execute permissions to the file.
+
+        c. Run the command chmod 644 newprogram to add execute permissions to the file.
+
+        d. Run the command chmod u+x newprogram to add execute permissions to the file.
+```
+Correct: d
+```
+20. You need to use superuser privileges to _____.
+
+        a. create files in our own home directory
+
+        b. log into the system
+
+        c. allow other users to access our files
+
+        d. modify system settings and software
+```
+Correct: d
+Changes to the system need to be done by a user with elevated privileges.
+```
+21. You want to find any files that start with Po and end with e. Which character would you insert between o and e to match any number of every possible character?
+
+a. /
+
+b. *
+
+c. .
+
+d. @
+```
+Correct: b
+This character is a wild card and will match any number of any characters in a filename, for example, Poe, Pole, and Police.
+```
+22. File permissions let us control who can _____.
+
+        a. delete files only
+
+        b. create files only
+
+        c. read, write, and execute a file
+
+        d. change how files are executed only
+```
+Correct: c
+R, W, and X are the fundamental categories of access for the user, group, and others.
+```
+23. If you we want to execute using superuser privileges, what command do you use in front of another command?
+
+        a. bash
+
+        b. sudo
+
+        c. root
+
+        d. admin
+```
+Correct: b
+This command can be thought of as 'switch user and do', 'superuser do', or 'substitute user and do', depending on who you ask.
+```
+24. How would you alter this command using octal notation to give read, write, and execute permissions to the file's owner, members of the file's designated group, and all other users for the file poems.txt?
+chmod poems.txt
+
+        a. chmod 777 poems.txt
+
+        b. chown poems.txt
+
+        c. chmod u-r poems.txt
+
+        d. chmod 244 poems.txt
+```
+Correct: a
+This changes the permissions for the poems.txt file, and gives read, write, and execute permissions to the file's owner, members of the file's designated group, and all other users.
+```
+25. File permissions can be set using two modes. What are they?
+
+        a. octal and symbolic
+
+        b. octal and decimal
+
+        c. representative and symbolic
+
+        d. normal and administrative
+```
+Correct: a
+Depending on how you need to change the permissions of a file, it can be easier to use one or the other.
+```
+26. What is the highest level of the filesystem hierarchy called?
+
+        a. home
+
+        b. level 0
+
+        c. root
+
+        d. C:
+```
+Correct: c
+The filesystem root, represented by /, is the highest level of the filesystem hierarchy -- everything else in the filesystem is nested somewhere within the root filesystem.
+```
