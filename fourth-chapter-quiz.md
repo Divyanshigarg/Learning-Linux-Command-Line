@@ -66,8 +66,8 @@ This character isn't widely used, so it can be odd to work with at first.
 ```
 6. What purpose do zip files serve in Linux?
 
-            a. They allow us to combine files in a space-saving way, and are commonly used when we exchange files with other platforms 
-            or across the internet.
+            a. They allow us to combine files in a space-saving way, and are commonly used when we exchange files with other 
+            platforms or across the internet.
 
             b. They combine many files into one file, but do not offer benefits such as reduced size.
 
@@ -130,14 +130,199 @@ The -n option sets what number of lines to display.
 Correct: a
 0 is the standard input, and 1 is the standard output.
 ```
+11. What does a pipe do?
 
+            a. It stops information from flowing between commands.
 
+            b. It discards the output of a command and starts the next command with a blank slate.
 
+            c. It works only when connected to the internet.
 
+            d. It sends the output of one command to the input of another.
+```
+Correct: d
+Pipes allow us to connect simple tools together in complex ways.
+```
+12. A user wants to view the contents of the file poems.txt. Which command would be used to see the entire contents of this file?
 
+            a. view
 
+            b. head
 
+            c. tail
 
+            d. cat
+```
+Correct: d
+This command will display all contents of the file selected.
+```
+13. To set environment variables that persist between bash sessions, you can edit _____.
 
+            a. ~/.bash_profile
 
+            b. ~/env
 
+            c. ~/bash
+
+            d. /profile
+```
+Correct: a
+The .bash_profile file can set many other parameters for your bash session as well.
+```
+14. Which command lets you scroll around and search in a text file?
+
+            a. cat
+
+            b. tail
+
+            c. less
+
+            d. head
+```
+Correct: c
+The less command provides a minimal interface within which we can move around a file.
+```
+15. Vim has two primary operating modes. What are they?
+
+            a. command mode and insert mode
+
+            b. command mode and control mode
+
+            c. control mode and text mode
+
+            d. text mode and graphics mode
+```
+Correct: a
+Switch to command mode with Esc and insert mode with "i", "I", "o", or a variety of other keys.
+```
+16. In nano, what does Ctrl + O (^O) do?
+
+            a. saves (outputs) the file
+
+            b. creates a blank (original) file
+
+            c. searches for a term (object)
+
+            d. closes (obfuscates) the editor
+```
+Correct: a
+Some of the nano commands are not very intuitive. Luckily, the menu bar at the bottom of the screen reminds us of some common tasks.
+```
+17. In nano, where are common commands listed?
+
+            a. along the top of the screen
+
+            b. at the bottom of the screen
+
+            c. nowhere
+
+            d. in the man pages
+```
+Correct: b
+As you resize the terminal, you'll see more or fewer commands.
+```
+18. How would you alter the below code to add numbers to the output lines?
+```
+grep "the" poems.txt
+```
+            a. grep -n "the" poems.txt
+
+            b. grep -n poems.txt
+
+            c. grep -a "the" poems.txt
+
+            d. n -grep "the" poems.txt
+```
+Correct: a
+This command will number the output lines where the word "the" is found in the file poems.txt.
+```
+19. To show the lines from the file report.txt which contain the numbers 1, 2, or 3, what should you write?
+
+            a. grep "123" report.txt
+
+            b. grep -E "[123]" report.txt
+
+            c. grep 123 report.txt
+
+            d. grep report.txt "[123]"
+```
+Correct: b 
+This command uses a regular expression rather than a literal string match.
+```
+20. What is the best command for modifying information from a file or stream?
+
+            a. tail
+
+            b. sed
+
+            c. sort
+
+            d. cat
+```
+Correct: b
+sed is a good choice if you need to modify information.
+```
+21. In an Awk program, the term $3 represents _____.
+
+            a. the contents of the fourth field on each line
+
+            b. the contents of the third field on each line
+
+            c. three dollars
+
+            d. the entire third line of a file or stream
+```
+Correct: b
+Awk is helpful for extracting information from well-formatted text streams.
+```
+22. To switch from insert mode to command mode in Vim, press _____.
+
+            a. q
+
+            b. Esc
+
+            c. !
+
+            d. :
+```
+Correct: b
+When you switch to command mode from insert mode, the --INSERT-- indicator will disappear from the lower left corner of the screen.
+```
+23. What should you write to show the lines from the file report.txt which match the search term "completed"?
+
+            a. grep report.txt "completed"
+
+            b. grep "completed" report.txt
+
+            c. grep report.txt
+
+            d. grep "completed"
+```
+Correct: b
+While the double quotes aren't necessary, it's a good practice to use them.
+```
+24. You are in your home directory and have typed the command ls -h. What output will result from typing this command?
+
+            a. Files beginning with a / in the home directory will be displayed.
+
+            b. All files in the filesystem root directory will be displayed.
+
+            c. Files with names beginning with a period in the home directory will be shown.
+
+            d. Files in the home directory will be displayed, with their sizes represented in human-readable units.
+```
+Correct: d 
+```
+25. On a Linux system, the PATH environment variable represents _____.
+
+            a. locations which the shell will search for executable programs
+
+            b. a list of all of the directories on a filesystem
+
+            c. the root of the filesystem
+
+            d. the current working directory
+```
+Correct: a
+Without being able to search in the PATH, we would have to type out the full path to common tools every time we used them.
+```
