@@ -236,9 +236,9 @@ Correct: b
 Remember that a symbolic link will break if the original file is moved.
 ```
 19. You have downloaded a program from the web, and when you try to run it, you receive the error:
-
+```
 -bash: ./newprogram: Permission denied
-
+```
 How would you attempt to resolve this problem?
 
         a. There is nothing to be done, the program is simply broken.
@@ -266,13 +266,13 @@ Changes to the system need to be done by a user with elevated privileges.
 ```
 21. You want to find any files that start with Po and end with e. Which character would you insert between o and e to match any number of every possible character?
 
-a. /
+        a. /
 
-b. *
+        b. *
 
-c. .
+        c. .
 
-d. @
+        d. @
 ```
 Correct: b
 This character is a wild card and will match any number of any characters in a filename, for example, Poe, Pole, and Police.
@@ -315,7 +315,8 @@ chmod poems.txt
         d. chmod 244 poems.txt
 ```
 Correct: a
-This changes the permissions for the poems.txt file, and gives read, write, and execute permissions to the file's owner, members of the file's designated group, and all other users.
+This changes the permissions for the poems.txt file, and gives read, write, and execute permissions to the file's owner,
+members of the file's designated group, and all other users.
 ```
 25. File permissions can be set using two modes. What are they?
 
@@ -341,5 +342,6 @@ Depending on how you need to change the permissions of a file, it can be easier 
         d. C:
 ```
 Correct: c
-The filesystem root, represented by /, is the highest level of the filesystem hierarchy -- everything else in the filesystem is nested somewhere within the root filesystem.
+The filesystem root, represented by /, is the highest level of the filesystem hierarchy -- everything else in the filesystem is nested 
+somewhere within the root filesystem.
 ```
